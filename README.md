@@ -10,21 +10,25 @@ Get information of LeetCode problems
 pip install Leetcode-problem-info
 ```
 
-2. Get details of a problem
-
+2. import
 ```python
 from LeetCode_problem_info import problem_info
-
-# initialize drive object to get problem data
+```
+initialize drive object to get problem data
+```python
 drive = problem_info.Get_Info()
-# get problem title by entering problem id
+```
+Get problem title using problem ```id```
+```python
 drive.problem_title(id)
-
-# Get problem details by entering problem id
+```
+##### Get problem details by entering problem id
+```python
 drive.problem_details(id)
-# this methord will return three property as a list data
-# Example: ['Two Sum', '45.20%', 'Easy']
+```
+Output: ```['Two Sum', '45.20%', 'Easy']```
 
-# get problem url by entering problem id
+Get problem ```url``` by entering problem id
+```python
 drive.problem_url(id)
 ```
