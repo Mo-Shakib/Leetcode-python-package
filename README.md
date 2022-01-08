@@ -10,7 +10,7 @@ Get information of LeetCode problems
 pip install Leetcode-problem-info
 ```
 
-2. Generate an aesthetic ASCII visual:
+2. Get details of a problem
 
 ```python
 from LeetCode_problem_info import problem_info
@@ -22,6 +22,9 @@ drive.problem_title(id)
 
 # Get problem details by entering problem id
 drive.problem_details(id)
+# this methord will return three property as a list data
+# Example: ['Two Sum', '45.20%', 'Easy']
 
 # get problem url by entering problem id
 drive.problem_url(id)
+```
