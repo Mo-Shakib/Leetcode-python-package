@@ -25,3 +25,6 @@ class Get_Info:
             return url
         except KeyError:
             return 'Sorry, the problem data is not present in our database!'
+        
+    def all_data(self):
+        return self.problem_data
