@@ -8,13 +8,13 @@ class Get_Info:
         try:
             return self.problem_data[problem_id][0]
         except KeyError:
-            return 'Sorry, the problem data is not present in our database!'
+            return ' - '
     
     def problem_details(self, problem_id):
         try:
             return self.problem_data[problem_id]
         except KeyError:
-            return 'Sorry, the problem data is not present in our database!'
+            return [' - ',' - ',' - ']
 
     def problem_url(self, problem_id):
         try:
@@ -24,7 +24,7 @@ class Get_Info:
             url = 'https://leetcode.com/problems/' + title
             return url
         except KeyError:
-            return 'Sorry, the problem data is not present in our database!'
+            return '-'
         
     def all_data(self):
         return self.problem_data
